@@ -1,0 +1,118 @@
+.footer{
+    width: 100%;
+    height: 417px;
+    background-color: @background-footer;
+    .name{
+        font-family: 'Montserrat-Regular';
+        font-size: 14px;
+        font-weight: bold;
+        color: @name-title-footer;
+        padding-bottom: 30px;
+    }
+    span{
+        font-family: 'Open_Sans';
+        font-size: 14px;
+        font-weight: bold;
+        color: @text-footer-color;
+    }
+    i{
+        color: @text-footer-color;
+    }
+    &-right,&-mid,&-left{
+        .col(33%);
+        padding-top: 45px;
+        padding-bottom: 30px;
+        hr{
+            margin-bottom: 19px;
+          
+        }
+    }
+    &-left{
+        .body{
+            width: 73%;
+        }
+        span{
+            line-height: 22px;
+        }
+        i{
+            padding: 0 15px;
+            padding-top: 50px;
+            &:first-child{
+                padding-left: 0px;
+            }
+        }
+    }
+    &-mid{
+        display: table-cell;
+        .wrap-navigation{
+            display: flex;
+        .navigation-left,.navigation-mid{
+            color: @text-footer-color;
+            .col(50%);
+            padding: 0px;
+            margin: 0px;
+            div{
+                padding: 6px 0;
+                font-family: 'Open_Sans';
+                font-size: 14px;
+                font-weight: bold;
+                &:first-child{
+                    padding-top: 0px;
+                }
+                &:last-child{
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+    }
+    &-right{
+       &-all{
+        width: 73%;
+        margin-left: 27%;
+           i{
+               padding-right: 6.5px;
+           }
+           span{
+               padding-left:6.5px ;
+           }
+           .phone,.mail{
+               margin-top: 23px;
+           }
+           .location{
+               display: flex;
+               .text-locotion{
+               div{
+                   color: @text-footer-color;
+                   padding-left: 6.5px;
+                   &:last-child{
+                  margin-top: 23px;
+                   }
+                }
+               }
+               .mail{
+                display: flex;
+                align-items: center;
+                span{padding-left: 11px;}
+            }
+           }
+       }
+    }
+    .copy-right{
+        color: @text-footer-color;
+        font-family: 'Open_Sans';
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 65px;
+        i{
+            color: red;
+        }
+        span{
+            color: white;
+        }
+    }
+    .icon-bank{
+        float: right;
+        line-height: 65px;
+    }
+}
